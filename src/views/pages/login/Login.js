@@ -55,6 +55,8 @@ const Login = () => {
                   </CForm>
                 </CCardBody>
               </CCard>
+
+
               <CCard className="text-white bg-primary py-5 d-md-down-none" style={{ width: '44%' }}>
                 <CCardBody className="text-center">
                   <div>
@@ -67,6 +69,8 @@ const Login = () => {
                   </div>
                 </CCardBody>
               </CCard>
+
+              
             </CCardGroup>
           </CCol>
         </CRow>

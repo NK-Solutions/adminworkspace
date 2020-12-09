@@ -42,8 +42,8 @@ const Users = () => {
       <CCol xl={6}>
         <CCard>
           <CCardHeader>
-            Users
-            <small className="text-muted"> example</small>
+            Team
+            <small className="text-muted"> (co-worker) </small>
           </CCardHeader>
           <CCardBody>
           <CDataTable
