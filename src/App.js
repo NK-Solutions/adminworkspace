@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Redirect, Switch } from 'react-router-dom';
 import './scss/style.scss';
 
 const loading = (
@@ -17,7 +17,37 @@ const Register = React.lazy(() => import('./views/pages/register/Register'));
 const Page404 = React.lazy(() => import('./views/pages/page404/Page404'));
 const Page500 = React.lazy(() => import('./views/pages/page500/Page500'));
 
+//code to login authenticate => found on GitHub
+
+const isAuthenticated = () => {
+  //write your condition here
+  return false;
+}
+
+
+const UnauthenticatedRoute = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={(props) => (
+    !isAuthenticated()
+      ? <Component {...props} />
+      : <Redirect to='/' />
+  )} />
+);
+
+
+const AuthenticatedRoute = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={(props) => (
+    isAuthenticated()
+      ? <Component {...props} />
+      : <Redirect to='/login' />
+  )} />
+);
+
+//until here <==
+
+
 class App extends Component {
+
+  
 
   render() {
     return (
