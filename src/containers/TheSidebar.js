@@ -11,7 +11,6 @@ import {
   CSidebarNavDropdown,
   CSidebarNavItem,
 } from '@coreui/react'
-import Logohead from '../assets/icons/logohead'
 
 import CIcon from '@coreui/icons-react'
 
