@@ -3,7 +3,7 @@
   "version": "3.1.1",
   "description": "CoreUI React Open Source Bootstrap 4 Admin Template",
   "author": {
-    "name": "CoreUI",
+    "name": "mneubauer",
     "url": "https://coreui.io",
     "github": "https://github.com/coreui",
     "twitter": "https://twitter.com/core_ui"
@@ -14,7 +14,7 @@
       "url": "https://github.com/orgs/coreui/people"
     }
   ],
-  "homepage": ".",
+  "homepage": "https://workspace.nksolutions.net",
   "copyright": "Copyright 2017-2020 creativeLabs Łukasz Holeczek",
   "license": "MIT",
   "private": true,
@@ -48,6 +48,8 @@
     "react-scripts": "~4.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
