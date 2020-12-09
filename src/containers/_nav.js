@@ -121,34 +121,6 @@ export default [
     ],
   },
   {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Buttons',
-    route: '/buttons',
-    icon: 'cil-cursor',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Buttons',
-        to: '/buttons/buttons',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Brand buttons',
-        to: '/buttons/brand-buttons',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Buttons groups',
-        to: '/buttons/button-groups',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Dropdowns',
-        to: '/buttons/button-dropdowns',
-      }
-    ],
-  },
-  {
     _tag: 'CSidebarNavItem',
     name: 'Charts',
     to: '/charts',
@@ -225,6 +197,12 @@ export default [
   {
     _tag: 'CSidebarNavTitle',
     _children: ['Resources'],
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Owncloud',
+    to: '',
+    icon: 'cil-cloud-download',
   },
   {
     _tag: 'CSidebarNavDropdown',
