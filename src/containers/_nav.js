@@ -14,7 +14,7 @@ export default [
   },
   {
     _tag: 'CSidebarNavTitle',
-    _children: ['Theme']
+    _children: ['Main']
   },
   {
     _tag: 'CSidebarNavItem',
@@ -224,7 +224,7 @@ export default [
   },
   {
     _tag: 'CSidebarNavTitle',
-    _children: ['Extras'],
+    _children: ['Resources'],
   },
   {
     _tag: 'CSidebarNavDropdown',
@@ -254,32 +254,22 @@ export default [
       },
     ],
   },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Disabled',
-    icon: 'cil-ban',
-    badge: {
-      color: 'secondary',
-      text: 'NEW',
-    },
-    addLinkClass: 'c-disabled',
-    'disabled': true
-  },
+
   {
     _tag: 'CSidebarNavDivider',
     className: 'm-2'
   },
   {
     _tag: 'CSidebarNavTitle',
-    _children: ['Labels']
+    _children: ['Links']
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Label danger',
+    name: 'GitHub',
     to: '',
     icon: {
-      name: 'cil-star',
-      className: 'text-danger'
+      name: 'cib-github',
+      className: 'text-warning'
     },
     label: true
   },
@@ -295,11 +285,11 @@ export default [
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Label warning',
+    name: 'Label danger',
     to: '',
     icon: {
       name: 'cil-star',
-      className: 'text-warning'
+      className: 'text-danger'
     },
     label: true
   },
